@@ -1,0 +1,18 @@
+{
+  "name": "api-registro-produto",
+  "version": "1.0.0",
+  "description": "Projeto de uma API REST desenvolvida para realizar cadastro e listagem de produtos.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
