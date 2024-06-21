@@ -6,7 +6,7 @@ const cadastrarProduto = (req, res) => {
     const novoProduto = {
         nomeDoProduto,
         descricaoDoProduto,
-        valorDoProduto,
+        valorDoProduto, // Valor em centavos
         disponivelParaVenda
     }
 
