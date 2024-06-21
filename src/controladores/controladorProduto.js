@@ -3,11 +3,13 @@ const produtos = [];
 const cadastrarProduto = (req, res) => {
     const { nomeDoProduto, descricaoDoProduto, valorDoProduto, disponivelParaVenda } = req.body;
 
+    const disponivelMinusculo = disponivelParaVenda.toLowerCase();
+
     const novoProduto = {
         nomeDoProduto,
         descricaoDoProduto,
         valorDoProduto, // Valor em centavos
-        disponivelParaVenda
+        disponivelParaVenda: disponivelMinusculo
     }
 
     produtos.push(novoProduto);
