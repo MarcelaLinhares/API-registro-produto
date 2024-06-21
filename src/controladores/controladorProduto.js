@@ -15,6 +15,15 @@ const cadastrarProduto = (req, res) => {
     res.status(201).json(novoProduto);
 };
 
+const listarProdutos = (req, res) => {
+    const produtosSelecionados = produtos.map(({ nomeDoProduto, valorDoProduto }) => ({ nomeDoProduto, valorDoProduto }));
+
+    const ordenarProdutos = produtosSelecionados.sort((a, b) => a.valorDoProduto - b.valorDoProduto);
+
+    return res.status(200).json(ordenarProdutos);
+};
+
 module.exports = {
-    cadastrarProduto
+    cadastrarProduto,
+    listarProdutos
 };
